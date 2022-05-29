@@ -40,6 +40,7 @@ def create_specific_age_gender_face() -> None:
 
             get_generated_face(while_making_automation_headless())
 
+        return None
     except NoSuchElementException:
         create_specific_age_gender_face()
 

@@ -19,3 +19,5 @@ def get_generated_face(driver: webdriver) -> None:
     driver.get(src)
     with open(image_path, 'wb') as file:
         file.write(driver.find_element_by_xpath('/html/body/img').screenshot_as_png)
+
+    return None

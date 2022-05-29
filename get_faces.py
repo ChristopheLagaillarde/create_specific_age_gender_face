@@ -22,6 +22,7 @@ def get_faces(frame: np.ndarray, confidence_threshold: float = 0.5) -> list:
 
     for i in range(output.shape[0]):
         confidence: np.ndarray = output[i, 2]
+
         if confidence > confidence_threshold:
             box: np.ndarray = output[i, 3:7] * \
                 np.array([frame.shape[1], frame.shape[0],
@@ -29,6 +30,7 @@ def get_faces(frame: np.ndarray, confidence_threshold: float = 0.5) -> list:
             start_x, start_y, end_x, end_y = box.astype(int)
             start_x, start_y, end_x, end_y = start_x - \
                 10, start_y - 10, end_x + 10, end_y + 10
+
             start_x: int = 0 if start_x < 0 else start_x
             start_y: int = 0 if start_y < 0 else start_y
             end_x: int = 0 if end_x < 0 else end_x
