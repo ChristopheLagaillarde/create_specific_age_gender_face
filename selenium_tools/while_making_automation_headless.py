@@ -20,5 +20,7 @@ def while_making_automation_headless() -> webdriver:
     options.add_argument('--disable-gpu')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('--no-sandbox')
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
     driver = webdriver.Edge(executable_path="msedgedriver.exe", options=options)
     return driver
