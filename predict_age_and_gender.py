@@ -6,15 +6,18 @@
 from sys import argv
 
 from age_and_gender_detection import predict_age_and_gender
+from display_image import display_image
 from get_generated_face import get_generated_face
 from selenium_tools.while_making_automation_headless import while_making_automation_headless
 from check_gender_choice import check_gender_choice
 from check_age_choice import check_age_choice
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import TimeoutException
 import logging
 
 
 def create_specific_age_gender_face() -> None:
+
     try:
         wanted_gender: str = argv[1]
         wanted_age: str = f'({argv[2]}, {argv[3]})'
@@ -35,17 +38,31 @@ def create_specific_age_gender_face() -> None:
             logging.info(obtained_result)
 
             if wanted_gender in obtained_result and wanted_age in obtained_result:
-                break
+
+                display_image('Obtained face', image_path)
+                reply: str = str(input("Is this image what you are looking for ?(Y/N)\n"))
+
+                if reply == 'Y':
+                    break
+
+                else:
+                    print('Still searching...')
+                    obtained_result = 'reset'
+                    get_generated_face(invisible_driver)
+                    continue
 
             get_generated_face(invisible_driver)
 
         return None
+
     except NoSuchElementException:
         create_specific_age_gender_face()
 
     except TimeoutError:
         create_specific_age_gender_face()
 
+    except TimeoutException:
+        create_specific_age_gender_face()
+
 
 create_specific_age_gender_face()
-

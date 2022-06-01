@@ -8,8 +8,6 @@ from selenium import webdriver
 
 
 def get_generated_face(driver: webdriver) -> None:
-
-    # Variables
     image_path: str = "images/generated_face.jpg"
     website_url: str = 'https://this-person-does-not-exist.com/fr'
 

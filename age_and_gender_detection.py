@@ -7,9 +7,9 @@
 import cv2
 import numpy as np
 from get_faces import get_faces
-from image_resize import image_resize
 from get_gender_predictions import get_gender_predictions
 from get_age_predictions import get_age_predictions
+from image_resize import image_resize
 
 
 def predict_age_and_gender(input_path: str) -> str:
@@ -39,4 +39,5 @@ def predict_age_and_gender(input_path: str) -> str:
         age_confidence_score: np.float32 = age_preds[0][i]
         label = f"{gender}-{gender_confidence_score*100:.1f}%, {age}-{age_confidence_score*100:.1f}%"
         cv2.destroyAllWindows()
+
         return label
