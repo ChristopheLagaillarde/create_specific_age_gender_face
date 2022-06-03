@@ -33,7 +33,7 @@
       <recent name="C:\Users\Lagaillarde\PycharmProject\create_specific_age_gender_face" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.predict_age_and_gender">
+  <component name="RunManager" selected="Python.confirm_if_is_wanted_result">
     <configuration name="age_and_gender_detection" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="create_specific_age_gender_face" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,7 +55,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="predict_age_and_gender" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="confirm_if_is_wanted_result" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="create_specific_age_gender_face" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +67,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Lagaillarde\PycharmProject\create_specific_age_gender_face\predict_age_and_gender.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/confirm_if_is_wanted_result.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_specific_age_gender_face" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="create_specific_age_gender_face" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Lagaillarde\PycharmProject\create_specific_age_gender_face\create_specific_age_gender_face.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -78,7 +99,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.predict_age_and_gender" />
+        <item itemvalue="Python.confirm_if_is_wanted_result" />
+        <item itemvalue="Python.create_specific_age_gender_face" />
       </list>
     </recent_temporary>
   </component>

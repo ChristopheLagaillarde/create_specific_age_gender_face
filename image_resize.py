@@ -1,5 +1,5 @@
 # Program : image_resize
-# Description : resize the image for the prediction
+# Description : Resize the image for the prediction
 # Date : 01/06/22
 # Author : Christophe Lagaillarde
 # Version : 1.0

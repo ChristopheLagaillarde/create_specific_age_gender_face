@@ -10,6 +10,7 @@ import numpy as np
 
 def display_image(title: str, image_path: str) -> None:
 
+    # Variable
     image: np.ndarray = cv2.imread(image_path)
 
     image = cv2.resize(image, (640, 640))

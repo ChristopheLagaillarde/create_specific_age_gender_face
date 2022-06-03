@@ -1,5 +1,5 @@
 # Program : get_gender_predictions
-# Description : tell the gender of a face picture
+# Description : Tell the gender of a face picture
 # Date : 26/05/22
 # Auteur : Christophe Lagaillarde
 # Version : 1.0

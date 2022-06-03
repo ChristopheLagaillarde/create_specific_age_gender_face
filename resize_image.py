@@ -1,5 +1,5 @@
 # Program : resize_image
-# Description : resize an image
+# Description : Resize an image
 # Date : 01/06/22
 # Author : Christophe Lagaillarde
 # Version : 1.0
