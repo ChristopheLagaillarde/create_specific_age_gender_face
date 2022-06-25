@@ -15,7 +15,10 @@ def display_image(title: str, image_path: str) -> None:
 
     image = cv2.resize(image, (640, 640))
     cv2.imshow(title, image)
+    cv2.setWindowProperty(title, cv2.WND_PROP_TOPMOST, 1)
+
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
 
     return None

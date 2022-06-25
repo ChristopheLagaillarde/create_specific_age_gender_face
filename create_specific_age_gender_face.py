@@ -13,14 +13,10 @@ from check_gender_choice import check_gender_choice
 from check_age_choice import check_age_choice
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
-from numba import jit
 from sys import argv
 import logging
-from numba.core.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
-import warnings
 
 
-@jit
 def create_specific_age_gender_face() -> None:
 
     try:
@@ -62,7 +58,6 @@ def create_specific_age_gender_face() -> None:
         create_specific_age_gender_face()
 
 
+
 if __name__ == "__main__":
-    warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
-    warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
     create_specific_age_gender_face()
